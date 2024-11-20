@@ -1,0 +1,106 @@
+body {
+    font-family: 'THSarabun', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea; /* ปรับสีพื้นหลังให้อ่อนลง */
+    color: #333; /* สีข้อความหลัก */
+}
+
+.container {
+    max-width: 900px; /* ลดความกว้างเพื่อความมินิมอล */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* มุมโค้งที่ดูนุ่มนวล */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff; /* เน้นสีหัวเรื่อง */
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px; /* เพิ่มพื้นที่ช่องว่าง */
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase; /* ตัวพิมพ์ใหญ่ */
+}
+
+tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+tr:hover {
+    background-color: #f0f0f0;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* เพิ่มแอนิเมชัน */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    table, th, td {
+        font-size: 14px; /* ลดขนาดตัวอักษร */
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 12px; /* ลดขนาดปุ่ม */
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    table {
+        display: block; /* ใช้ Scrollable Table */
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
